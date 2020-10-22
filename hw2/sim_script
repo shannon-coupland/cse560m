@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# Loc1
+$GEM5/build/ARM/gem5.opt --outdir="sims/loc1_16" assignment2.py --prog="queens" --bp="LocalBP" --bp_size="16" --bp_bits="1"
+$GEM5/build/ARM/gem5.opt --outdir="sims/loc1_32" assignment2.py --prog="queens" --bp="LocalBP" --bp_size="32" --bp_bits="1"
+$GEM5/build/ARM/gem5.opt --outdir="sims/loc1_64" assignment2.py --prog="queens" --bp="LocalBP" --bp_size="64" --bp_bits="1"
+$GEM5/build/ARM/gem5.opt --outdir="sims/loc1_128" assignment2.py --prog="queens" --bp="LocalBP" --bp_size="128" --bp_bits="1"
+$GEM5/build/ARM/gem5.opt --outdir="sims/loc1_256" assignment2.py --prog="queens" --bp="LocalBP" --bp_size="256" --bp_bits="1"
+$GEM5/build/ARM/gem5.opt --outdir="sims/loc1_512" assignment2.py --prog="queens" --bp="LocalBP" --bp_size="512" --bp_bits="1"
+$GEM5/build/ARM/gem5.opt --outdir="sims/loc1_1024" assignment2.py --prog="queens" --bp="LocalBP" --bp_size="1024" --bp_bits="1"
+$GEM5/build/ARM/gem5.opt --outdir="sims/loc1_2048" assignment2.py --prog="queens" --bp="LocalBP" --bp_size="2048" --bp_bits="1"
+$GEM5/build/ARM/gem5.opt --outdir="sims/loc1_4096" assignment2.py --prog="queens" --bp="LocalBP" --bp_size="4096" --bp_bits="1"
+$GEM5/build/ARM/gem5.opt --outdir="sims/loc1_8192" assignment2.py --prog="queens" --bp="LocalBP" --bp_size="8192" --bp_bits="1"
+
+
+# Loc2
+$GEM5/build/ARM/gem5.opt --outdir="sims/loc2_16" assignment2.py --prog="queens" --bp="LocalBP" --bp_size="16" --bp_bits="2"
+$GEM5/build/ARM/gem5.opt --outdir="sims/loc2_32" assignment2.py --prog="queens" --bp="LocalBP" --bp_size="32" --bp_bits="2"
+$GEM5/build/ARM/gem5.opt --outdir="sims/loc2_64" assignment2.py --prog="queens" --bp="LocalBP" --bp_size="64" --bp_bits="2"
+$GEM5/build/ARM/gem5.opt --outdir="sims/loc2_128" assignment2.py --prog="queens" --bp="LocalBP" --bp_size="128" --bp_bits="2"
+$GEM5/build/ARM/gem5.opt --outdir="sims/loc2_256" assignment2.py --prog="queens" --bp="LocalBP" --bp_size="256" --bp_bits="2"
+$GEM5/build/ARM/gem5.opt --outdir="sims/loc2_512" assignment2.py --prog="queens" --bp="LocalBP" --bp_size="512" --bp_bits="2"
+$GEM5/build/ARM/gem5.opt --outdir="sims/loc2_1024" assignment2.py --prog="queens" --bp="LocalBP" --bp_size="1024" --bp_bits="2"
+$GEM5/build/ARM/gem5.opt --outdir="sims/loc2_2048" assignment2.py --prog="queens" --bp="LocalBP" --bp_size="2048" --bp_bits="2"
+$GEM5/build/ARM/gem5.opt --outdir="sims/loc2_4096" assignment2.py --prog="queens" --bp="LocalBP" --bp_size="4096" --bp_bits="2"
+$GEM5/build/ARM/gem5.opt --outdir="sims/loc2_8192" assignment2.py --prog="queens" --bp="LocalBP" --bp_size="8192" --bp_bits="2"
+
+
+# Tour
+$GEM5/build/ARM/gem5.opt --outdir="sims/tour_16" assignment2.py --prog="queens" --bp="TournamentBP" --bp_size="16" --bp_bits="2"
+$GEM5/build/ARM/gem5.opt --outdir="sims/tour_32" assignment2.py --prog="queens" --bp="TournamentBP" --bp_size="32" --bp_bits="2"
+$GEM5/build/ARM/gem5.opt --outdir="sims/tour_64" assignment2.py --prog="queens" --bp="TournamentBP" --bp_size="64" --bp_bits="2"
+$GEM5/build/ARM/gem5.opt --outdir="sims/tour_128" assignment2.py --prog="queens" --bp="TournamentBP" --bp_size="128" --bp_bits="2"
+$GEM5/build/ARM/gem5.opt --outdir="sims/tour_256" assignment2.py --prog="queens" --bp="TournamentBP" --bp_size="256" --bp_bits="2"
+$GEM5/build/ARM/gem5.opt --outdir="sims/tour_512" assignment2.py --prog="queens" --bp="TournamentBP" --bp_size="512" --bp_bits="2"
+$GEM5/build/ARM/gem5.opt --outdir="sims/tour_1024" assignment2.py --prog="queens" --bp="TournamentBP" --bp_size="1024" --bp_bits="2"
+$GEM5/build/ARM/gem5.opt --outdir="sims/tour_2048" assignment2.py --prog="queens" --bp="TournamentBP" --bp_size="2048" --bp_bits="2"
+$GEM5/build/ARM/gem5.opt --outdir="sims/tour_4096" assignment2.py --prog="queens" --bp="TournamentBP" --bp_size="4096" --bp_bits="2"
+$GEM5/build/ARM/gem5.opt --outdir="sims/tour_8192" assignment2.py --prog="queens" --bp="TournamentBP" --bp_size="8192" --bp_bits="2"
+
+

@@ -1,0 +1,65 @@
+#!/bin/bash
+
+echo Loc1 16
+awk 'NR==31' sims/loc1_16/stats.txt
+echo Loc1 32
+awk 'NR==31' sims/loc1_32/stats.txt
+echo Loc1 64
+awk 'NR==31' sims/loc1_64/stats.txt
+echo Loc1 128
+awk 'NR==31' sims/loc1_128/stats.txt
+echo Loc1 256
+awk 'NR==31' sims/loc1_256/stats.txt
+echo Loc1 512
+awk 'NR==31' sims/loc1_512/stats.txt
+echo Loc1 1024
+awk 'NR==31' sims/loc1_1024/stats.txt
+echo Loc1 2048
+awk 'NR==31' sims/loc1_2048/stats.txt
+echo Loc1 4096
+awk 'NR==31' sims/loc1_4096/stats.txt
+echo Loc1 8192
+awk 'NR==31' sims/loc1_8192/stats.txt
+
+echo Loc2 16
+awk 'NR==31' sims/loc2_16/stats.txt
+echo Loc2 32
+awk 'NR==31' sims/loc2_32/stats.txt
+echo Loc2 64
+awk 'NR==31' sims/loc2_64/stats.txt
+echo Loc2 128
+awk 'NR==31' sims/loc2_128/stats.txt
+echo Loc2 256
+awk 'NR==31' sims/loc2_256/stats.txt
+echo Loc2 512
+awk 'NR==31' sims/loc2_512/stats.txt
+echo Loc2 1024
+awk 'NR==31' sims/loc2_1024/stats.txt
+echo Loc2 2048
+awk 'NR==31' sims/loc2_2048/stats.txt
+echo Loc2 4096
+awk 'NR==31' sims/loc2_4096/stats.txt
+echo Loc2 8192
+awk 'NR==31' sims/loc2_8192/stats.txt
+
+echo Tour 16
+awk 'NR==31' sims/tour_16/stats.txt
+echo Tour 32
+awk 'NR==31' sims/tour_32/stats.txt
+echo Tour 64
+awk 'NR==31' sims/tour_64/stats.txt
+echo Tour 128
+awk 'NR==31' sims/tour_128/stats.txt
+echo Tour 256
+awk 'NR==31' sims/tour_256/stats.txt
+echo Tour 512
+awk 'NR==31' sims/tour_512/stats.txt
+echo Tour 1024
+awk 'NR==31' sims/tour_1024/stats.txt
+echo Tour 2048
+awk 'NR==31' sims/tour_2048/stats.txt
+echo Tour 4096
+awk 'NR==31' sims/tour_4096/stats.txt
+echo Tour 8192
+awk 'NR==31' sims/tour_8192/stats.txt
+
