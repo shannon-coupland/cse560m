@@ -1,0 +1,10 @@
+#!/bin/bash
+
+$GEM5/build/ARM/gem5.opt --outdir="sims/1GHz_1-way_8kB" assignment3.py --prog="daxpy" --l1d_size="8kB" --l1d_assoc="1" --clock_freq="1GHz"
+$GEM5/build/ARM/gem5.opt --outdir="sims/1GHz_1-way_16kB" assignment3.py --prog="daxpy" --l1d_size="16kB" --l1d_assoc="1" --clock_freq="1GHz"
+$GEM5/build/ARM/gem5.opt --outdir="sims/1GHz_1-way_32kB" assignment3.py --prog="daxpy" --l1d_size="32kB" --l1d_assoc="1" --clock_freq="1GHz"
+$GEM5/build/ARM/gem5.opt --outdir="sims/1GHz_1-way_64kB" assignment3.py --prog="daxpy" --l1d_size="64kB" --l1d_assoc="1" --clock_freq="1GHz"
+$GEM5/build/ARM/gem5.opt --outdir="sims/800MHz_2-way_8kB" assignment3.py --prog="daxpy" --l1d_size="8kB" --l1d_assoc="2" --clock_freq="0.8GHz"
+$GEM5/build/ARM/gem5.opt --outdir="sims/800MHz_2-way_16kB" assignment3.py --prog="daxpy" --l1d_size="16kB" --l1d_assoc="2" --clock_freq="0.8GHz"
+$GEM5/build/ARM/gem5.opt --outdir="sims/800MHz_2-way_32kB" assignment3.py --prog="daxpy" --l1d_size="32kB" --l1d_assoc="2" --clock_freq="0.8GHz"
+$GEM5/build/ARM/gem5.opt --outdir="sims/800MHz_2-way_64kB" assignment3.py --prog="daxpy" --l1d_size="64kB" --l1d_assoc="2" --clock_freq="0.8GHz"

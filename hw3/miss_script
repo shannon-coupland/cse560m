@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo 1 GHz 1-way 8kB
+awk 'NR==139' sims/1GHz_1-way_8kB/stats.txt
+echo 1 GHz 1-way 16kB
+awk 'NR==139' sims/1GHz_1-way_16kB/stats.txt
+echo 1 GHz 1-way 32kB
+awk 'NR==139' sims/1GHz_1-way_32kB/stats.txt
+echo 1 GHz 1-way 64kB
+awk 'NR==139' sims/1GHz_1-way_64kB/stats.txt
+
+
+echo 0.8 GHz 2-way 8kB
+awk 'NR==139' sims/800MHz_2-way_8kB/stats.txt
+echo 0.8 GHz 2-way 16kB
+awk 'NR==139' sims/800MHz_2-way_16kB/stats.txt
+echo 0.8 GHz 2-way 36kB
+awk 'NR==139' sims/800MHz_2-way_32kB/stats.txt
+echo 0.8 GHz 2-way 64kB
+awk 'NR==139' sims/800MHz_2-way_64kB/stats.txt
