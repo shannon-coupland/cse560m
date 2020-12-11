@@ -1,0 +1,16 @@
+#!/bin/bash
+
+rm insts_issued.csv
+rm cache_miss_rate.csv
+
+# Cache miss rate (line 212 or 222, item 2 of stats.txt)
+for d in /home/warehouse/shannon.coupland/cse560m/hw4/sims/*/ ; do
+    path="${d}stats.txt"
+    dir="${d#/*/*/*/*/*/*/}"
+    num=$(grep -nr "iqInstsIssued" $path | awk -F " " '{print $2}')
+    num2=$(grep -nr "dcache.overall_miss_rate::total" $path | awk -F " " '{print $2}')
+
+    printf "${dir%/},${num}\n" >> insts_issued.csv
+    printf "${dir%/},${num2}\n" >> cache_miss_rate.csv
+    
+done
