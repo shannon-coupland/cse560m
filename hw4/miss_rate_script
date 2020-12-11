@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+# For each directory in sims, put the name of the directory and its cache miss rate on a line in a file
+for d in 

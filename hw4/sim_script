@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Sweep number of physical floating point registers
+for i in 256 512 1024 2048 4096 #floating point registers
+do
+    for j in 4 8 16 32 64 128 256 #iqueue entries
+    do
+        for k in 4 8 16 32 64 128 256 #reorder buffer entries
+        do
+            $GEM5/build/ARM/gem5.opt --outdir="/home/warehouse/shannon.coupland/cse560m/hw4/sims/${i}-fp-regs_${j}-rob-entries_${k}-iq-entries" hw4config.py -c $GEM5/../test_progs/daxpy/daxpy_arm_big  --cpu-type="DerivO3CPU" --caches --l2cache --num-phys-float-regs=$i --num-rob-entries=$j --num-iq-entries=$k
+        done
+    done
+done
